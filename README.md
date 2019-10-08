@@ -1,6 +1,6 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-##Steps to run the code
+## Steps to run the code
 Make sure you have npmjs
 1. cd backend
 2. npm install
@@ -11,7 +11,7 @@ Make sure you have npmjs
 7. npm install
 8. npm start
 
-##Create a MySQL Database if mine isn't working
+## Create a MySQL Database if mine isn't working
 1. Download MySQL Community Server 8.0.17 at https://dev.mysql.com/downloads/mysql/
 2. Download MySQL Workbench 8.0.17 at https://dev.mysql.com/downloads/workbench/
 3. Open Workbench and navigate to your local instance
@@ -19,7 +19,7 @@ Make sure you have npmjs
 5. Name the database
 6. In backend/server.js, insert the new database name where my database is: "3308_project"
 
-##Things I was NOT able to do
+## Things I was NOT able to do
 1. Get/Fetch method to get all available data in database
 2. CRUD methods (create, read, update, delete) for the database
 3. Did not know how to format the homepage so I just used an old one of mine
@@ -30,7 +30,7 @@ Make sure you have npmjs
 8. Very limited functionality, however it is completely full stack
 9. Fix the GET /manifest.json 404 error which I believe is due to connecting to the database but not actually getting anything from it
 
-##Libraries/Plugins/Stuff I Used
+## Libraries/Plugins/Stuff I Used
 Front end
 1. Create-React-App
 2. React
