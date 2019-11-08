@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
 import { HashLink as Link } from 'react-router-hash-link';
 
+
 //this is how to display the dropdown menu when you hover over the right icon
 class NavBar extends Component {
     render() {
         return (
+	  
             <header>
                 <ul id="headerButtons">
                     <li><a href="#home"><div className="icon"></div></a></li>
@@ -20,6 +22,7 @@ class NavBar extends Component {
                     </li>
                 </ul>
             </header>
+	  
         )
     }
 }

@@ -33,7 +33,7 @@ h3 {
     opacity: 1;
 }
 body {
-    background-color: #2F4454;
+    background-color: #57ba98;
     margin: 0;
 }
 footer {
@@ -69,6 +69,7 @@ li a, .dropbtn {
 li.dropdown {
     display: inline-block;
     float: right;
+
 }
 
 .dropdown-content {
@@ -112,7 +113,7 @@ li.dropdown {
 .backImage {
     height: 600px;
     max-width: 100%;
-    opacity: 0.5;
+    opacity: 1;
 }
 .title {
     position: absolute;
@@ -125,13 +126,24 @@ li.dropdown {
     line-height: 55px;
     margin-bottom: -15px;
 }
+.title2 {
+    position: absolute;
+    top: 240px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    color: #2343E4;
+    text-align: center;
+    line-height: 55px;
+    margin-bottom: -15px;
+}
 .phrase {
     position: absolute;
     top: 435px;
     left: 50%;
     transform: translate(-50%, -50%);
     display: block;
-    color: white;
+    color: #2343E4;
     text-align: center;
     width: 100%;
     padding: 0px 0px 240px 0px;
@@ -158,7 +170,7 @@ li.dropdown {
     text-align: justify;
 }
 .section3 {
-    background-color: #DA7B93;
+    background-color: #3b945e;
     width: 100%;
     max-width: 100%;
     margin-top: 240px;
@@ -217,6 +229,11 @@ li.dropdown {
     margin-left: auto;
     margin-right: auto;
 }
+#headerButtons{
+  overflow: hidden;
+  background-color: #57ba98;
+}
+
 @media all and (min-width: 480px) {
     .Login {
         padding: 60px 0;

@@ -12,41 +12,45 @@ class HomePage extends Component {
             <div>
             <div className="container">
                 <img src={wall} alt ="background" className="backImage"></img>
-                <h1 className="title">plannerCORTEX</h1>
-                <h3 className="phrase">sed vulputate odio ut enim blandit volutpat maecenas</h3>
+                <h1 className="title2">plannerCORTEX</h1>
+                <h3 className="phrase">Organize your life today</h3>
             </div>
             <div>
-                <h3 className="blocktext1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Donec ultrices tincidunt arcu non sodales.</h3>
+                <h3 className="blocktext1">..</h3>
                 <a href="#home"><img src={image} className="image" alt="picture"></img></a>
-                <h2 className="bigWords">a pellentesque sit amet porttitor eget dolor morbi</h2>
-                <h3 className="blocktext2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Diam volutpat commodo sed egestas egestas fringilla phasellus faucibus scelerisque. Sit amet porttitor eget dolor morbi non arcu. Mi tempus imperdiet nulla malesuada pellentesque elit eget gravida.</h3>
-                <h3 className="blocktext2">Massa vitae tortor condimentum lacinia quis vel eros donec. Vitae proin sagittis nisl rhoncus mattis rhoncus urna. Vitae congue eu consequat ac felis donec et odio pellentesque. Egestas maecenas pharetra convallis posuere morbi. Viverra mauris in aliquam sem fringilla ut morbi. Curabitur gravida arcu ac tortor dignissim convallis aenean et. </h3>
+                <h2 className="bigWords">Our mission statement</h2>
+                <h3 className="blocktext2">plannerCORTEX is a task scheduler designed to help people that struggle with ADD</h3>
+                <h3 className="blocktext2">paragraph 2 </h3>
             </div>
+	    <div>
+		<h3 className="blocktext1">EXAMPLE IMAGE OF USER HOMEPAGE </h3>
+	    </div>
             <div className="section3">
-                <h2 className="planning">quam adipiscing vitae</h2>
+                <h2 className="planning">Design Features</h2>
             <div id="box-container">
             <div id="box-1">
                 <img src={image} className="pIcon" alt="key1"></img>
-                <h2 className="pPhrase">nulla facilisi nullam vehicula ipsum a</h2>
-                <h3 className="pWords">pellentesque sit amet porttitor eget dolor morbi non arcu risus</h3>
+                <h2 className="pPhrase">Stay up to date</h2>
+                <h3 className="pWords">plannerCORTEX displays a users tasks both on a day to day basis, and on a weekly basis so that you can stay on top of all your tasks!</h3>
             </div>
             <div id="box-2">
                 <img src={image} className="pIcon" alt="key2"></img>
-                <h2 className="pPhrase">sed risus ultricies tristique nulla</h2>
-                <h3 className="pWords">nisi lacus sed viverra  in hac habitasse platea dictumst</h3>
+                <h2 className="pPhrase">Prioritize your life</h2>
+                <h3 className="pWords">With our brand new importance feature, you can select which tasks ought to be done first, and which ones you want to save for later.</h3>
             </div>
             <div id="box-3">
                 <img src={image} className="pIcon" alt="key3"></img>
-                <h2 className="pPhrase">nisl tincidunt eget nullam non</h2>
-                <h3 className="pWords">mauris a diam maecenas sed enim ut sem viverra aliquet eget sit quam</h3>
+                <h2 className="pPhrase">Add tasks with just a few clicks</h2>
+                <h3 className="pWords">Inputing tasks has never been easier, create, edit or delete tasks within seconds</h3>
             </div>
             <div id="box-4">
                 <img src={image} className="pIcon" alt="key4"></img>
-                <h2 className="pPhrase">sed risus ultricies tristique nulla</h2>
-                <h3 className="pWords">enim lobortis scelerisque fermentum dui faucibus in ornare quam viverra orci sagittis</h3>
+                <h2 className="pPhrase">Never miss another deadline</h2>
+                <h3 className="pWords">Schedule alerts to ensure no project deadline ever slips past you again</h3>
             </div>
         </div>
     </div>
+{/*
     <div>
         <h2 className="planning">mollis</h2>
         <div id="box-container">
@@ -72,6 +76,7 @@ class HomePage extends Component {
             </div>
         </div>
     </div>
+*/}
             </div>
         )
     }
