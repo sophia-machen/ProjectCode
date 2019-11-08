@@ -1,0 +1,71 @@
+Tasks
+TID (primary)
+Start_date
+End_date
+Priority
+Category
+Name
+Notes
+Email
+UID (foreign)
+
+ Users
+ UID (primary)
+ Password
+ Name
+ Email
+Category_name_1
+Category_name_2
+Category_name_3
+Category_name_4
+Category_name_5
+
+QUERIES:
+///////////// Housekeeping:
+Return UID:
+SELECT UID FROM Users WHERE Name = name
+
+Enter task:
+INSERT INTO Tasks(Start_date, End_date, Priority, Category, Name, Notes, Email UID)
+VALUES
+  (s1,s2,s3,s4,s5,s6,s7)
+
+Delete task:
+DELETE FROM TASKS WHERE TID = tid
+
+Delete tasks which the end date has passed:
+DELETE FROM Tasks WHERE End_Date < (SELECT CURDATE())
+
+///////////// Calendar/Day view of Tasks:
+Fetch tasks of user on date and display by priority
+SELECT * FROM Tasks WHERE UID in (SELECT UID FROM Users WHERE Name = name) AND Start_date <= date AND End_date >= date ORDER BY Priority
+
+Fetch tasks of user of today and display by priority
+SELECT * FROM Tasks WHERE UID in (SELECT UID FROM Users WHERE Name = name) AND Start_date <= (SELECT CURDATE()) AND End_date >= (SELECT CURDATE()) ORDER BY Priority
+
+
+//////////// Alerts for upcoming tasks:
+Fetch tasks of user of n days from today and display by priority
+SELECT * FROM Tasks WHERE UID in (SELECT UID FROM Users WHERE Name = name) AND Start_date <= (SELECT CURDATE() + n ) AND End_date >= (SELECT CURDATE()) ORDER BY Priority
+
+Fetch tasks of user of the nth day from today and display by priority
+SELECT * FROM Tasks WHERE UID in (SELECT UID FROM Users WHERE Name = name) AND Start_date <= (SELECT CURDATE() + n ) AND End_date >= (SELECT CURDATE() + n) ORDER BY Priority
+
+
+/////////// Select Tasks for email notification:
+Select user's Email
+SELECT Email FROM Users WHERE UID = uid
+
+Select tasks of user within the next n days that set for which email notification setting > 0
+SELECT * FROM Tasks WHERE UID in (SELECT UID FROM Users WHERE Name = name) AND Email > 0
+
+Select tasks and emails of all users within the next n days that set for which email motification setting >0
+SELECT Users.email,DT.name FROM
+(
+    SELECT *
+    FROM Tasks
+    WHERE Email>0
+) DT
+LEFT JOIN
+Users
+ON DT.UID=Users.UID;
