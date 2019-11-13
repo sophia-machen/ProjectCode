@@ -1,0 +1,2 @@
+SELECT COUNT(*) FROM Users;
+SELECT Name FROM tasks WHERE startTime = CURRENT_TIMESTAMP;
