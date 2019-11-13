@@ -1,0 +1,26 @@
+CREATE TABLE users (
+    UID int, 
+    Password VARCHAR(30), 
+    Email VARCHAR(50), 
+    Name VARCHAR(50), 
+    Cat1 VARCHAR(20), 
+    Cat2 VARCHAR(20), 
+    Cat3 VARCHAR(20), 
+    Cat4 VARCHAR(20), 
+    Cat5 VARCHAR(20)
+);
+
+CREATE TABLE tasks (
+    TID int, 
+    Start_date DATETIME, 
+    End_date DATETIME, 
+    Priority tinyint, 
+    Name VARCHAR(50), 
+    Notes VARCHAR(300), 
+    Email tinyint, 
+    Category tinyint,
+    FOREIGN KEY(UID) 
+        REFERENCES users(UID) 
+        ON DELETE CASCADE
+);
+
