@@ -50,33 +50,6 @@ class HomePage extends Component {
             </div>
         </div>
     </div>
-{/*
-    <div>
-        <h2 className="planning">mollis</h2>
-        <div id="box-container">
-            <div id="box-1">
-                <img src={image} className="pIcon" alt="feature1"></img>
-                <h2 className="pPhrase">tortor consequat</h2>
-                <h3 className="pWords">egestas maecenas pharetra convallis posuere morbi leo urna molestie at</h3>
-            </div>
-            <div id="box-2">
-                <img src={image} className="pIcon" alt="feature2"></img>
-                <h2 className="pPhrase">etiam dignissim</h2>
-                <h3 className="pWords">viverra tellus in hac habitasse platea dictumst vestibulum rhoncus est pellentesque</h3>
-            </div>
-            <div id="box-3">
-                <img src={image} className="pIcon" alt="feature4"></img>
-                <h2 className="pPhrase">purus faucibus</h2>
-                <h3 className="pWords">eu sem integer vitae justo eget magna fermentum iaculis</h3>
-            </div>
-            <div id="box-4">
-                <img src={image} className="pIcon" alt="key4"></img>
-                <h2 className="pPhrase">elementum facilisisa</h2>
-                <h3 className="pWords">pharetra massa massa ultricies mi quis hendrerit dolor magna eget</h3>
-            </div>
-        </div>
-    </div>
-*/}
             </div>
         )
     }

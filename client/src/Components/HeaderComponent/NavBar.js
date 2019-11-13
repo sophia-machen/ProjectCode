@@ -14,7 +14,7 @@ class NavBar extends Component {
                         <a href="javascript:void(0)" className="dropbtn"><div className="icon"></div></a>
                         <div className="dropdown-content">
                             <a href="#">Link 1</a>
-                            <a href="#">Link 2</a>
+                            <Link to="/userhome">UserHomePage</Link>
                             {/*This links to localhost:3000/Login, and displays as "Login"*/}
                             {/*The route for this can be found in App.js*/}
                             <Link to="/Login">Login</Link>
